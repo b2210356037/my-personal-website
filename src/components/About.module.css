@@ -1,0 +1,30 @@
+.about {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+  }
+  
+  .contact {
+    margin-top: 1rem;
+  }
+  
+  .contact p {
+    margin: 0.5rem 0;
+    color: #e0e0e0;
+  }
+  

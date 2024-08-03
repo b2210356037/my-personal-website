@@ -1,0 +1,34 @@
+.header {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.header nav a:hover {
+  background-color: #333333;
+}
+
+.activeLink {
+  font-weight: bold;
+  background-color: #333333;
+}

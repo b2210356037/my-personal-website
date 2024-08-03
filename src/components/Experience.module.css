@@ -1,0 +1,55 @@
+.experience {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .job {
+    margin-bottom: 2rem;
+  }
+  
+  .job h3 {
+    color: #4fc3f7;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job h4 {
+    color: #81d4fa;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date {
+    color: #bdbdbd;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job ul {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+  
+  .job li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+  }
+  
+  .job li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4fc3f7;
+  }
+  

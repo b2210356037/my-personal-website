@@ -1,0 +1,41 @@
+.education {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .education h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .degree h3 {
+    color: #4fc3f7;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .degree p {
+    margin: 0.25rem 0;
+    color: #e0e0e0;
+  }
+  
+  .additional {
+    margin-top: 1rem;
+    color: #81d4fa;
+  }
+  
+  .additional h4 {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .additional p {
+    margin: 0.25rem 0;
+    color: #e0e0e0;
+  }
+  

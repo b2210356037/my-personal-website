@@ -1,0 +1,19 @@
+.app {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      padding: 1rem;
+    }
+  }
+  
