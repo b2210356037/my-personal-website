@@ -13,6 +13,11 @@
     position: relative;
   }
   
+  .projects h2 i {
+    margin-right: 10px;
+    color: #4fc3f7;
+  }
+  
   .projects h2::after {
     content: '';
     display: block;
@@ -34,6 +39,7 @@
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
   }
   
   .project:hover {
@@ -41,10 +47,19 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
   }
   
+  .projectIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #4fc3f7;
+  }
+  
   .project h3 {
     color: #4fc3f7;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    padding-right: 2rem;
   }
   
   .tech {

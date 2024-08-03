@@ -7,6 +7,7 @@ function Projects() {
       title: "Deutsch Lernen",
       tech: "Python, Flask, BS4, Web Development, Web Scraping",
       date: "June 2023 – Present",
+      icon: "fas fa-language",
       description: [
         "Designed and developed a front-end web application to help German learners with Flask.",
         "Optimized the amount of time learners spend on searching for conjugations and examples by 54%.",
@@ -17,6 +18,7 @@ function Projects() {
       title: "MBTI Style Character Analysis",
       tech: "Python, NumPy, Pandas, Machine Learning",
       date: "Dec 2022 – Jan 2023",
+      icon: "fas fa-brain",
       description: [
         "Developed a personality prediction algorithm with KNN.",
         "Used more than 60k people's data from all over the world, the dataset is on Kaggle.",
@@ -27,10 +29,11 @@ function Projects() {
 
   return (
     <section className={styles.projects}>
-      <h2>Projects</h2>
+      <h2><i className="fas fa-project-diagram"></i> Projects</h2>
       <div className={styles.projectGrid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.project}>
+            <i className={`${project.icon} ${styles.projectIcon}`}></i>
             <h3>{project.title}</h3>
             <p className={styles.tech}>{project.tech}</p>
             <p className={styles.date}>{project.date}</p>
