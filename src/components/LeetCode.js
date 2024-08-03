@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { YOUTUBE_API_KEY } from '../config';
 import styles from './LeetCode.module.css';
 
 function LeetCode() {
@@ -7,12 +6,16 @@ function LeetCode() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const playlistId = 'PLGk-FsMwQ8lXgT569naEgZ9_RQhC-Ie2f';
+  const apiKey = process.env.REACT_APP_GOOGLE_YOUTUBE_API_KEY;
 
   useEffect(() => {
     const fetchVideos = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${YOUTUBE_API_KEY}&maxResults=50`);
+        if (!apiKey) {
+          throw new Error('YouTube API key is not set');
+        }
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=50`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -27,7 +30,7 @@ function LeetCode() {
     };
 
     fetchVideos();
-  }, []);
+  }, [apiKey]);
 
   if (isLoading) {
     return <div>Loading...</div>;
