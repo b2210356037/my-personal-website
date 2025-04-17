@@ -1,8 +1,33 @@
 import React from 'react';
 import styles from './Experience.module.css';
+import siemensLogo from '../assets/logos/siemens_logo.jpg';
 
 function Experience() {
   const experiences = [
+    {
+      logo: siemensLogo,
+      title: "Software Engineer",
+      company: "Siemens",
+      date: "Jan 2025 – Present",
+      
+      description: [
+        "Implemented Electron IPC messaging to connect the Angular front-end with the main process, enabling UI control over core application features.",
+        "Integrated Electron's ipcMain and ipcRenderer modules to establish secure and efficient communication channels for UI-driven commands.",
+        "Designed custom IPC message protocols to standardize communication for various control actions between the Angular renderer and Electron main process.",
+        "Utilized asynchronous IPC communication to allow the Angular UI to manage backend tasks without blocking, enhancing application workflow.",
+        "Embedded Keycloak authentication pages directly within the application view for robust user login and identity management."
+      ]
+    },
+    {
+      company: "Simsoft Computer Tehnologies",
+      title: "Software Engineer",
+      date: "Jul 2024 – Aug 2024",
+      description: [
+        "Developed computer vision projects using YOLO algorithms, gaining hands-on experience with transfer learning, CNN and model fine-tuning.",
+        "Created a TCP-based socket application with PyQt6 GUI and Firebase integration, enhancing network programming skills.",
+        "Contributed to a Udemy-like e-learning platform using Django, with PostgreSQL database, and containerization with Docker."
+      ]
+    },
     {
       title: "Software Engineer",
       company: "Freelance",
@@ -28,11 +53,27 @@ function Experience() {
   return (
     <section className={styles.experience}>
       <h2>Experience</h2>
+      {/* REMOVE the hardcoded Siemens h3 from here */}
+
       {experiences.map((exp, index) => (
         <div key={index} className={styles.job}>
-          <h3>{exp.title}</h3>
-          <h4>{exp.company}</h4>
-          <p className={styles.date}>{exp.date}</p>
+          {/* ADD THIS STRUCTURE TO DISPLAY LOGO + TEXT */}
+          <div className={styles.jobHeader}>
+            {exp.logo && ( // Only show img if logo exists
+              <img
+                src={exp.logo}
+                alt={`${exp.company} logo`}
+                className={styles.companyLogo}
+              />
+            )}
+            <div className={styles.jobHeaderText}>
+              <h3>{exp.title}</h3>
+              <h4>{exp.company}</h4>
+              <p className={styles.date}>{exp.date}</p>
+            </div>
+          </div>
+          {/* END OF ADDED STRUCTURE */}
+
           <ul>
             {exp.description.map((item, i) => (
               <li key={i}>{item}</li>

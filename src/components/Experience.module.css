@@ -11,6 +11,10 @@
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
+
+  .siemens-blue {
+    color: #009999;
+  }
   
   .job {
     margin-bottom: 2rem;
@@ -52,4 +56,13 @@
     left: 0;
     color: #4fc3f7;
   }
+
+  .companyLogo {
+    /* Make these values smaller */
+    width: 50px;  /* Example: Reduced from 50px */
+    height: 50px; /* Example: Reduced from 50px */
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  
   
