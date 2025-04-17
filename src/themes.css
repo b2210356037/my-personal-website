@@ -1,0 +1,30 @@
+:root {
+    --header-background: #eeeeee;
+    --header-text: #1f2023;
+    --header-link-hover-bg: #dddddd;
+    --header-active-link-bg: #cccccc;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --border-color: #e1e4e8;
+  }
+  
+  [data-theme="dark"] {
+    --header-background: #1a1a1a;
+    --header-text: #ffffff;
+    --header-link-hover-bg: #333333;
+    --header-active-link-bg: #333333;
+    --bg-color: #121212; 
+    --text-color: #f0f0f0;
+    --card-bg: #1e1e1e;
+    --border-color: #444444;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
