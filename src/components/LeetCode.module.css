@@ -1,13 +1,13 @@
 .leetcode {
-  background-color: #1a1a1a;
+  background-color: var(--card-bg);
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
 }
 
 .leetcode h2 {
-  color: #ffffff;
+  color: var(--header-text);
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -24,14 +24,14 @@
 }
 
 .videoItem {
-  background-color: #2c2c2c;
+  background-color: var(--card-bg);
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .videoItem h3 {
-  color: #4fc3f7;
+  color: var(--accent-color);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -52,12 +52,12 @@
 }
 
 .leetcode a {
-  color: #4fc3f7;
+  color: var(--accent-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .leetcode a:hover {
-  color: #81d4fa;
+  color: var(--accent-hover-color);
   text-decoration: underline;
 }

@@ -1,34 +1,53 @@
 .header {
-  background-color: #1a1a1a;
+  background-color: var(--header-background);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .header h1 {
-  color: #ffffff;
+  color: var(--header-text);
   margin: 0;
 }
 
 .header nav {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
-.header nav a {
-  color: #ffffff;
+.header nav a,
+.themeToggle {
+  color: var(--header-text);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 
-.header nav a:hover {
-  background-color: #333333;
+.header nav a:hover,
+.themeToggle:hover {
+  background-color: var(--header-link-hover-bg);
 }
 
 .activeLink {
   font-weight: bold;
-  background-color: #333333;
+  background-color: var(--header-active-link-bg);
+}
+
+.themeToggle {
+  background-color: transparent;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
