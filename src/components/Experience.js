@@ -3,6 +3,7 @@ import styles from './Experience.module.css';
 import siemensLogo from '../assets/logos/siemens_logo.jpg';
 import simsoftLogo from '../assets/logos/simsoftofficial_logo.jpg';
 import tubitakLogo from '../assets/logos/tubitak_logo.jpg';
+import freelanceLogo from '../assets/logos/TG.png';
 
 function Experience() {
   const experiences = [
@@ -32,6 +33,7 @@ function Experience() {
       ]
     },
     {
+      logo: freelanceLogo,
       title: "Software Engineer",
       company: "Freelance",
       date: "June 2023 – Sep 2023",
