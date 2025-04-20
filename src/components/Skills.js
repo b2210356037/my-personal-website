@@ -4,7 +4,7 @@ import styles from './Skills.module.css';
 function Skills() {
   const skills = [
     { category: 'Languages', items: ['Python', 'Java', 'C#', 'JavaScript', 'C++'] },
-    { category: 'Technologies/Tools', items: ['Flutter', 'Firebase', 'Arduino', 'ReactJS', 'Git', 'VSCode', '.NET', 'Flask', 'Proteus'] },
+    { category: 'Technologies/Tools', items: ['Flutter', 'Firebase', 'Arduino', 'ReactJS', "ElectronJS", "Keycloak",'Git', 'VSCode', '.NET', 'Flask', 'Proteus'] },
   ];
 
   return (

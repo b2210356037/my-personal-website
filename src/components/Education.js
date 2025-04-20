@@ -15,7 +15,7 @@ function Education() {
         <h4>Languages:</h4>
         <p>C1 English, B1 German</p>
         <h4>Related Coursework:</h4>
-        <p>Data Structures, Algorithms, Computer Organization, Software Laboratory</p>
+        <p>Data Structures, Algorithms, Computer Organization, Algorithms Analysis, Software Engineering, Systems Programming, Automata Theory, Database Management, Operating Systems, Programming Languages</p>
       </div>
     </section>
   );
