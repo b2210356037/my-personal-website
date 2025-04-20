@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Experience.module.css';
 import siemensLogo from '../assets/logos/siemens_logo.jpg';
+import simsoftLogo from '../assets/logos/simsoftofficial_logo.jpg';
+import tubitakLogo from '../assets/logos/tubitak_logo.jpg';
 
 function Experience() {
   const experiences = [
@@ -19,6 +21,7 @@ function Experience() {
       ]
     },
     {
+      logo: simsoftLogo,
       company: "Simsoft Computer Tehnologies",
       title: "Software Engineer",
       date: "Jul 2024 – Aug 2024",
@@ -39,6 +42,7 @@ function Experience() {
       ]
     },
     {
+      logo: tubitakLogo,
       title: "Software Engineer",
       company: "Hacettepe University, Tübitak",
       date: "Feb 2023 – Aug 2023",
@@ -53,13 +57,13 @@ function Experience() {
   return (
     <section className={styles.experience}>
       <h2>Experience</h2>
-      {/* REMOVE the hardcoded Siemens h3 from here */}
+      {}
 
       {experiences.map((exp, index) => (
         <div key={index} className={styles.job}>
-          {/* ADD THIS STRUCTURE TO DISPLAY LOGO + TEXT */}
+          {}
           <div className={styles.jobHeader}>
-            {exp.logo && ( // Only show img if logo exists
+            {exp.logo && (
               <img
                 src={exp.logo}
                 alt={`${exp.company} logo`}
@@ -72,7 +76,7 @@ function Experience() {
               <p className={styles.date}>{exp.date}</p>
             </div>
           </div>
-          {/* END OF ADDED STRUCTURE */}
+          {}
 
           <ul>
             {exp.description.map((item, i) => (

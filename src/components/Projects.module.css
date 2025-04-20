@@ -84,12 +84,12 @@
   padding-left: 1rem;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
-  color: #e0e0e0; /* Fixed light color for text on black */
+  color: #e0e0e0;
 }
 
 .project li::before {
   content: '•';
   position: absolute;
   left: 0;
-  color: #4fc3f7; /* Fixed color for bullet points */
+  color: #4fc3f7;
 }
