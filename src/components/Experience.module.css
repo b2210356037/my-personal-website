@@ -11,6 +11,10 @@
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
+
+  .siemens-blue {
+    color: #009999;
+  }
   
   .job {
     margin-bottom: 2rem;
@@ -52,4 +56,33 @@
     left: 0;
     color: #4fc3f7;
   }
+
+  .companyLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  
+.jobHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.jobHeaderText h3,
+.jobHeaderText h4,
+.jobHeaderText p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.companyLogo {
+  border-radius: 4px;
+  background-color: white;
+  padding: 2px;
+}
+
   

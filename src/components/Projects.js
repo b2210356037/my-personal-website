@@ -7,7 +7,7 @@ function Projects() {
       title: "Deutsch Lernen",
       tech: "Python, Flask, BS4, Web Development, Web Scraping",
       date: "June 2023 – Present",
-      icon: "fas fa-language",
+      link: "https://deutsche-verben-beta.vercel.app/",
       description: [
         "Designed and developed a front-end web application to help German learners with Flask.",
         "Optimized the amount of time learners spend on searching for conjugations and examples by 54%.",
@@ -18,7 +18,6 @@ function Projects() {
       title: "MBTI Style Character Analysis",
       tech: "Python, NumPy, Pandas, Machine Learning",
       date: "Dec 2022 – Jan 2023",
-      icon: "fas fa-brain",
       description: [
         "Developed a personality prediction algorithm with KNN.",
         "Used more than 60k people's data from all over the world, the dataset is on Kaggle.",
@@ -33,8 +32,20 @@ function Projects() {
       <div className={styles.projectGrid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.project}>
-            <i className={`${project.icon} ${styles.projectIcon}`}></i>
-            <h3>{project.title}</h3>
+            <h3>
+              {project.link ? (
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={styles.projectLink}
+                >
+                  {project.title} <i className="fas fa-external-link-alt"></i>
+                </a>
+              ) : (
+                project.title
+              )}
+            </h3>
             <p className={styles.tech}>{project.tech}</p>
             <p className={styles.date}>{project.date}</p>
             <ul>
